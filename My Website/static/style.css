@@ -1,0 +1,68 @@
+
+.animation-area {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    border-radius: 50%;
+    animation: bounce 4s infinite ease-in-out, move 6s infinite linear;
+}
+
+@keyframes bounce {
+    0%, 100% { top: 50px; }
+    50% { top: 300px; }
+}
+
+@keyframes move {
+    0% { left: 0; }
+    100% { left: calc(100% - 50px); }
+}
+
+/* Home Page Animation */
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;          
+    font-size: 1.1rem;          
+    text-transform: uppercase;  
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffeb3b !important;  
+}
+

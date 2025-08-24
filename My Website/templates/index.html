@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="home-container">
+        <canvas id="particles"></canvas>
+        <div class="home-text">
+            <h1 class="display-1 fw-bold text-warning"> HELLO </h1>
+            <p class="lead">THis WEBSITE is built using PYTHON & Flask</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='home.js') }}"></script>
+{% endblock %}
+
